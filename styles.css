@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula&family=Squada+One&display=swap');
+
+* { /* universal selector */
+    box-sizing: border-box; /* size of elements is determined by padding in margin and size of content */
+    font-family: 'Khula';
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none; /* removes underline */
+}
+
+.nav a:hover {
+    background-color: rgba(255, 187, 77, 1);
+}
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 187, 77, 1);
+}
+
+.main-nav li {
+    padding: 0 5%; /* space out as expanded and closed*/
+}
+
+.main-header {
+    background-image: url("Images/Header Background.jpg");
+    background-size: contain;
+    padding-bottom: 30px;
+}
+
+.car-name {
+    text-align: center;
+    margin: 0;
+    font-family: "Squada One";
+    font-weight: normal;
+}
+
+.car-name-large {
+    font-size: 10em;
+    color:red;
+    stroke: black;
+    text-decoration-line: line-through;
+}
+
+.content-section {
+    margin: 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto; /* margins on left and right will make the text align center */
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "";
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-image {
+    float: left; /* removes image off to left of text */
+    height: 200px;
+    margin: 15px;
+    border-radius: 30%;
+}
+
+.main-footer {
+    text-emphasis: stroke;
+    background-color: red;
+    
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    height: 3rem;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em; /* enlarges buttons */
+    cursor: pointer;
+}
+
+.btn-header { /* specific to "View on Wikipedia" button */
+    display: block;
+    margin: 0 auto;
+    color: white;
+    border: 2px solid #2d9cdb;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0; /* makes corners pointy */
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em; /* moves text within the button */
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.btn-extra {
+    display: block; /* only BLOCK-level elements can be centered */
+    margin: 0 auto;
+    color: blue;
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.prod-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+
+.prod-row:first-child {
+    font-style: italic;
+}
+
+.prod-row:last-child {
+    border-bottom: none;
+}
+
+.prod-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.prod-year {
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+    text-align: center;
+}
+
+.prod-units {
+    width: 24%;
+    text-align: center;
+}
+
+.prod-price {
+    width: 42%;
+    text-align: center;
+}
+
+.prod-btn {
+    max-width: 19%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: darkseagreen;
+}
+
+.gallery-item {
+    margin: 10px;
+}
+
+.gallery-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.gallery-item-image {
+    height: 250px;
+}
+
+.gallery-item-details {
+    display: flex; /* centers items vertically */
+    align-items: center;
+    padding: 5px;
+}
+
+.gallery-item-text {
+    flex-grow: 1; /* pushes button to end of container */
+    color: #333;
+}
+
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

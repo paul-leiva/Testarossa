@@ -5,119 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     -->
-    <meta name="description" content="This is the description"> <!-- This shows up under the page when Googled -->-->
+    <meta name="description" content="This is the description"> <!-- This shows up under the page when Googled -->
     <title>Ferrari Testarossa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav> <!-- Navigation bar -->
+    <header class="main-header">
+        <nav class="nav main-nav"> <!-- Navigation bar -->
             <ul> <!-- UNORDERED List -->
-                <li>HOME</li> <!-- List Items -->
-                <li>STORE</li>
-                <li>ABOUT</li>
+                <!-- List Items -->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav> <!-- End navigation bar -->
-        <hr> <!-- Supplies horizontal line (Horizontal Rule) -->
-        <h1>Ferrari Testarossa</h1>
-        <button type="button">View on Wikipedia</button>
-        <br>
-        <br>
+        <h1 class="car-name car-name-large">Ferrari Testarossa</h1>
+        <div class="container">
+            <button class="btn btn-header" type="button">View on Wikipedia</button>
+        </div>
         <!-- TODO: Find a suitable background image -->
-        <button type="button">♣</button>
+        <button class="btn btn-header btn-extra" type="button">⛽</button>
     </header>
 
-    <section>
-        <h2>Selected Production</h2>
+    <section class="content-section container">
+        <h2 class="section-header">Selected Production</h2>
         <div> <!-- Wraps all rows-->
-            <div> <!-- contains the individual row -->
-                <strong>1984</strong>
-                &lt;&gt;
-                <span>110</span>
-                &lt;&gt;
-                <span>DM 222,300</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
-                <hr>
+            <div class="prod-row">
+                <strong class="prod-item prod-year">Year</strong>
+                <span class="prod-item prod-units">Units Produced</span>
+                <span class="prod-item prod-price">Original Price</span>
             </div>
-            <div> <!-- contains the individual row -->
-                <strong>1985</strong>
-                &lt;&gt;
-                <span>568</span>
-                &lt;&gt;
-                <span>US$87,000</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
-                <hr>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1984</strong>
+                <span class="prod-item prod-units">110</span>                
+                <span class="prod-item prod-price">DM 222,300</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
             </div>
-            <div> <!-- contains the individual row -->
-                <strong>1986</strong>
-                &lt;&gt;
-                <span>819</span>
-                &lt;&gt;
-                <span>Fl. 392,426</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
-                <hr>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1985</strong>
+                <span class="prod-item prod-units">568</span>
+                <span class="prod-item prod-price">US$87,000</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
             </div>
-            <div> <!-- contains the individual row -->
-                <strong>1987</strong>
-                &lt;&gt;
-                <span>1008</span>
-                &lt;&gt;
-                <span>US$135,000</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
-                <hr>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1986</strong>
+                <span class="prod-item prod-units">819</span>
+                <span class="prod-item prod-price">Fl. 392,426</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
             </div>
-            <div> <!-- contains the individual row -->
-                <strong>1988</strong>
-                &lt;&gt;
-                <span>1072</span>
-                &lt;&gt;
-                <span>US$155,300</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
-                <hr>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1987</strong>
+                <span class="prod-item prod-units">1008</span>
+                <span class="prod-item prod-price">US$135,000</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
             </div>
-            <div> <!-- contains the individual row -->
-                <strong>1989</strong>
-                &lt;&gt;
-                <span>1126</span>
-                &lt;&gt;
-                <span>US$181,000</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
-                <hr>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1988</strong>
+                <span class="prod-item prod-units">1072</span>
+                <span class="prod-item prod-price">US$155,300</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
             </div>
-            <div> <!-- contains the individual row -->
-                <strong>1990</strong>
-                &lt;&gt;
-                <span>1308</span>
-                &lt;&gt;
-                <span>DM 268,000</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
-                <hr>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1989</strong>
+                <span class="prod-item prod-units">1126</span>
+                <span class="prod-item prod-price">US$181,000</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
             </div>
-            <div> <!-- contains the individual row -->
-                <strong>1991</strong>
-                &lt;&gt;
-                <span>1166</span>
-                &lt;&gt;
-                <span>DM 275,300</span>
-                &lt;&gt;
-                <button type="button">View Listings</button>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1990</strong>
+                <span class="prod-item prod-units">1308</span>
+                <span class="prod-item prod-price">DM 268,000</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
+            </div>
+            <div class="prod-row"> <!-- contains the individual row -->
+                <strong class="prod-item prod-year">1991</strong>
+                <span class="prod-item prod-units">1166</span>
+                <span class="prod-item prod-price">DM 275,300</span>
+                <button class="btn prod-item prod-btn btn-primary" type="button">View Listings</button>
             </div>
         </div>
     </section>
     
-    <footer>
-        <h3>Testarossa</h3>
-        <ul>
-            <li><img src="Images/AutoTrader.png"></li> <!-- AutoTrader -->
-            <li><img src="Images/eBay Motors.png"></li> <!-- eBay Motors -->
-            <li><img src="Images/Ferrari.png"></li> <!-- Ferrari -->
-        </ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="car-name">Testarossa</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.autotrader.com/cars-for-sale/all-cars/ferrari/testarossa/beverly-hills-ca-90210?dma=&searchRadius=0&isNewSearch=true&marketExtension=include&showAccelerateBanner=false&sortBy=relevance&numRecords=25" target="_blank">
+                        <img src="Images/AutoTrader.png">
+                    </a>
+                </li> <!-- AutoTrader -->
+                <li>
+                    <a href="https://www.ebay.com/sch/Cars-Trucks/6001/i.html?makeval=Ferrari&modelval=Testarossa&LH_ItemCondition=3000%7C1000%7C2500&_nkw=Ferrari+Testarossa&rt=nc&_oaa=1&_dcat=157049&UF_single_selection=Make%3AFerrari%2CModel%3ATestarossa&UF_context=finderType%3AVEHICLE_FINDER&_sacat=6001&_stpos=90210&_fspt=1" target="_blank">
+                        <img src="Images/eBay Motors.png">
+                    </a>
+                </li> <!-- eBay Motors -->
+                <li>
+                    <a href="https://www.ferrari.com/en-EN/auto/testarossa" target="_blank">
+                        <img src="Images/Ferrari.png"></li> <!-- Ferrari -->
+                    </a>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

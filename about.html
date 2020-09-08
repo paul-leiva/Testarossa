@@ -6,35 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferrari Testarossa</title>
     -->
-    <meta name="description" content="This is the description"> <!-- This shows up under the page when Googled -->-->
+    <meta name="description" content="This is the description"> <!-- This shows up under the page when Googled -->
     <title>Ferrari Testarossa | About</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav> <!-- Navigation bar -->
+    <header class="main-header">
+        <nav class="nav main-nav"> <!-- Navigation bar -->
             <ul> <!-- UNORDERED List -->
-                <li>HOME</li> <!-- List Items -->
-                <li>STORE</li>
-                <li>ABOUT</li>
+                <!-- List Items -->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav> <!-- End navigation bar -->
-        <hr> <!-- Supplies horizontal line (Horizontal Rule) -->
-        <h1>Ferrari Testarossa</h1>
+        <h1 class="car-name car-name-large">Ferrari Testarossa</h1>
     </header>
-    <section>
-        <h2>ABOUT</h2>
+    <section class="content-section container">
+        <h2 class="section-header">ABOUT</h2>
+        <img src="Images/ferrari-testarossa.jpg" class="about-image">
         <p>This text provides information about the Ferrari Testarossa. It is a 1980s-1990s supercar.</p>
-        <img src="Images/ferrari-testarossa.jpg">
         <p>INSERT MORE TEXT HERE.</p>
         <p>348 &gt; 355 &gt; Testarossa</p>
+        <br>
+        <br>
+        <br>
+        <br>
     </section>
-    <footer>
-        <h3>Testarossa</h3>
-        <ul>
-            <li><img src="Images/AutoTrader.png"></li> <!-- AutoTrader -->
-            <li><img src="Images/eBay Motors.png"></li> <!-- eBay Motors -->
-            <li><img src="Images/Ferrari.png"></li> <!-- Ferrari -->
-        </ul>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="car-name">Testarossa</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.autotrader.com/cars-for-sale/all-cars/ferrari/testarossa/beverly-hills-ca-90210?dma=&searchRadius=0&isNewSearch=true&marketExtension=include&showAccelerateBanner=false&sortBy=relevance&numRecords=25" target="_blank">
+                        <img src="Images/AutoTrader.png">
+                    </a>
+                </li> <!-- AutoTrader -->
+                <li>
+                    <a href="https://www.ebay.com/sch/Cars-Trucks/6001/i.html?makeval=Ferrari&modelval=Testarossa&LH_ItemCondition=3000%7C1000%7C2500&_nkw=Ferrari+Testarossa&rt=nc&_oaa=1&_dcat=157049&UF_single_selection=Make%3AFerrari%2CModel%3ATestarossa&UF_context=finderType%3AVEHICLE_FINDER&_sacat=6001&_stpos=90210&_fspt=1" target="_blank">
+                        <img src="Images/eBay Motors.png">
+                    </a>
+                </li> <!-- eBay Motors -->
+                <li>
+                    <a href="https://www.ferrari.com/en-EN/auto/testarossa" target="_blank">
+                        <img src="Images/Ferrari.png"></li> <!-- Ferrari -->
+                    </a>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
