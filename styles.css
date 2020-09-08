@@ -237,3 +237,12 @@ html, body {
 .video {
     text-align: center;
 }
+
+.footer-text {
+    text-align: center;
+    color: white;
+}
+
+.footer-text a:visited {
+    color: white;
+}
